@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet"  href="formulario.css.css">
+</head>
+<style>
+  *{
+    margin: 0%;
+    padding: 0;
+   
+}
+#titulo {
+    font-family: sans-serif;
+    color: aquamarine;
+    margin-left: 7%;
+}
+#subtitulo{
+  font-family: sans-serif;
+  color: blueviolet;
+  margin-left: 10%;
+}
+fieldset{
+  border: 0;
+}
+ body{
+  background-image: url(fundo.avif);
+  font-family: sans-serif;
+  font-size: 1em;
+  color: blanchedalmond;
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+}
+input, select, textarea, button{
+  border-radius: 5px;
+}
+.campo {
+    margin-bottom: 1em;
+
+}
+.campo label {
+    margin-bottom: 0.2em;
+    color: rgb(236, 233, 238);
+    display: block;
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+
+}
+.campo input[type="text"],.campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(194, 30, 235);
+    box-shadow: 2px 2px 2px black;
+    display: block;
+}
+.campo select option{
+    padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background-color: rgb(89, 214, 214);
+}
+.botao{
+    font-size: 1.2em;
+    background-color: blueviolet;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.botao:hover{
+  background-color: rgb(228, 164, 225);
+  box-shadow: inset 2px 2px 2px black;
+  text-shadow: none;
+}
+.botao, select{
+  display: inline-block;
+}
+#check{
+  display: inline-block;
+}
+.botao2{
+  border-radius: 10%;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+</style>
+<body>
+  <div id="teste">
+
+  </div>
+    
+<div>
+<h2 id="titulo"><p style="text-transform: uppercase;"><em> OLA PODES RESPONDER ESTE FORMULARIO </em></p></h2>
+<br>
+
+
+
+<br>
+<P style="text-transform: uppercase;" id="subtitulo"> preencha com as informações</P>
+</div>
+
+<form>
+<fieldset class="grupo">
+  <div>
+    <label for="nome"><strong style="text-transform: uppercase;">Nome</strong></label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="campo">
+    <label><strong style="text-transform: uppercase;">nota da web</strong> </label>
+    <input type="text" name="nota do site" id="nota do site" required>
+  </div>
+</fieldset>
+<div class="campo">
+  <label for="email"><strong style="text-transform: uppercase;">email</strong></label>
+  <input type="email" name="email" id="email" required>
+</div>
+<div class="campo">
+  <label for="podemos saber qual vc e"> <strong style="text-transform: uppercase;">podemos saber qual vc e </strong></label>
+  <label>
+    <input  type="radio" name="devweb" value="professor">professor
+  </label>
+  <label>
+    <input type="radio" name="devweb" value="aluno">aluno
+  </label>
+  <label>
+    <input type="radio" name="devweb" value="publico">publico
+  </label>
+  <div class="campo">
+    <label > <strong style="text-transform: uppercase;">senioridade</strong></label>
+    <select id="senioridade">
+        <option selected disabled value="">selecione</option>
+        <option>junior</option>
+        <option>pleno</option>
+        <option > senior</option>
+    </select>
+  </div>
+</div>
+<fieldset class="grupo">
+    <div id="check">
+        <label ><strong style="text-transform: uppercase;">selecione as tecnologias sendo usados </strong></label><br><br>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">
+        <label for="tecnologia1">html</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="css">
+        <label for="tecnologia2">css</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="java script">
+        <label for="tecnologia3">javascript</label>
+    </div>
+</fieldset>
+<div class="campo">
+    <br>
+       <label >
+            <strong style="text-transform: uppercase;">conte o que achou do portifolioe e o que pode melhorar</strong>   
+     </label><br>
+    <textarea row="6" style="width: 20em;" id="avaliação " name="avaliação"></textarea>
+      
+</div>
+<button class="botao" type="submit">concluido</button>
+<br><br>
+<button class="botao2" type="submit"><a href="projeto.html">voltar</a></button>
+
+
+
+</form>
+
+
+</body>
+</html

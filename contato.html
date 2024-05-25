@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+</head>
+<style>
+    ol{
+   color: rgb(195, 212, 39);
+    }
+    li{
+        color: rgb(255, 255, 255);
+    }
+    body{
+    
+    }
+    h1{
+        background-color: blueviolet;
+    }
+    .menu {
+            background-color: aquamarine;
+            height: 60px;
+            width: 580px;
+            
+        }
+    .green{
+            background-color: rgb(104, 230, 181);
+            transition: all 0.25s ease-in-out;
+            border-radius: 100px 80px;
+            
+      
+        }
+        .azulclaro{
+            background-color: rgb(0, 183, 255);
+            transition: all 0.25s ease-in-out;
+         
+            border-radius: 100px 80px;
+            
+
+        }
+        .amarelo{
+            background-color: rgb(168, 53, 168);
+            transition: all 0.25s ease-in-out;
+            border-radius: 100px 80px;
+            
+        }
+
+</style>
+<body>
+    <h1><P style="text-align: center;"> meus contatos </P></h1>
+
+    <ol >
+        <li> email 00001094875533sp@al.educacao.sp.gov.br</li>
+        <li>instagram<a href="https://www.instagram.com/oliver.tarqui/"></a></li>
+        <li>whatsapp +55 11 96770-0974</li>
+        <li>facebook<a href="https://www.facebook.com/oliver.tarqui.56/" target="_blank"></a></li>
+
+    </ol>
+ 
+                    <div class="content">
+                        <button class="azulclaro" id="btn-azul claro">azul claro</button>
+                        <button class="green" id="btn-green">green</button>
+                        <button class="amarelo" id="btn-amarelo">purpure</button>
+                    </div>
+    <script>
+        document.getElementById("btn-azul claro").
+          addEventListener("click", function (){
+              document.querySelector("body").
+              setAttribute("class", "azulclaro");
+            })
+            document.getElementById("btn-green").
+          addEventListener("click", function (){
+              document.querySelector("body").
+              setAttribute("class", "green");
+            })
+            document.getElementById("btn-amarelo").
+          addEventListener("click", function (){
+              document.querySelector("body").
+              setAttribute("class", "amarelo");
+              
+            })
+          
+  </script>
+</body>
+</html>
